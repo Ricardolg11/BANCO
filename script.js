@@ -88,7 +88,6 @@ function getTotals() {
   
     if(totalItems < 0) {
     alert("Atençao voce abriu um divida!");
-    alert("Esta devendo ao Banco: " + abs(totalItems));
 }
 }
 // Função get que pega os itens que es~tao no banco
