@@ -85,7 +85,11 @@ function getTotals() {
   incomes.innerHTML = totalIncomes;
   expenses.innerHTML = totalExpenses;
   total.innerHTML = totalItems;
- 
+  
+   if(totalItems < 0) 
+    alert("Atençao voce abriu um divida!");
+    alert("Esta devendo ao Banco: " + totalItems);
+
 }
 // Função get que pega os itens que es~tao no banco
 const getItensBD = () => JSON.parse(localStorage.getItem("db_items")) ?? [];
